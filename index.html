@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="card">
+        <div class="heading">
+            <h1>Expense Tracker</h1>
+        </div>
+        <div class="status">
+            <div class="balance">
+                <h3>Your Balance</h3>
+                <span id="balanceAmt">$00.00</span>
+            </div>
+            <div class="inc-exp-div">
+                <div class="income">
+                    <h3>INCOME</h3>
+                    <span id="incAmt">$000</span>
+                </div>
+                <hr>
+                <div class="expense">
+                    <h3>EXPENSE</h3>
+                    <span id="expAmt">$000</span>
+                </div>
+            </div>
+        </div>
+        <div class="history">
+            <div class="filter">
+                <h3>History</h3>
+                <i class="filters fa-solid fa-filter"></i>
+                <label for="select"></label>
+                <select name="choice" id="select">
+                    <option value="">Select to filter</option>
+                    <option value="All">Show all inc/exp </option>
+                    <option value="income">income</option>
+                    <option value="expense">expense</option>
+                </select>
+            </div>
+            <hr>
+            <div class="content">
+            <!-- <div class="display_inc_exp">
+               <p>burger</p>
+               <p>+3000</p>
+            </div>  -->
+            </div>
+    
+        </div>
+        <div class="transaction">
+            <h3>Add new transaction</h3>
+            <hr>
+            <div class="userInput">
+                <label for="inputBox"><h4>Text</h4></label>
+                <input type="text" placeholder="Enter Text...." id="inputBox">
+            </div>
+            <div class="amount">
+                <label for="inputAmt"><h4>Amount</h4></label>
+                <p>positive : income | negative : expense</p>
+                <input type="number" id="inputAmt">
+            </div>
+
+        </div>
+        <div class="btn">
+            <button id="addTransction"><h3>Add Transaction</h3></button>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

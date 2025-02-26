@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", serif;
+    background-color: #D9D7F1;
+}
+
+.card{
+    width: 500px;
+    border-radius: 1px solid black;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #FBFBFB;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.inc-exp-div{
+    /* height: 100px; */
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    padding: 15px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.12);
+}
+
+.income,.expense{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.balance{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.balance h3{
+    font-weight: 450;
+    font-size: 22px;
+}
+.balance span{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.display_inc_exp{
+    border: 1px solid black;
+    /* border-right: 8px solid green; */
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.history,.transaction{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.userInput,.amount{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.userInput input, .amount input{
+    padding: 5px 10px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+#addTransction{
+    padding: 5px 10px;
+}
+
+.income span,.expense span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.income span{
+    color: green;
+}
+.expense span{
+    color: red;
+}
+.amount p{
+    font-weight: 500;
+}
+
+.filter{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.status,.history{
+    margin-bottom: 15px;
+}
+
+#select{
+    visibility: hidden;
+}
+
+.content{
+    max-height: 60px;
+    overflow-y: scroll;
+    border: 1px solid black;
+}
+@media(max-width:499px ){
+    .card{
+        margin: 25px;
+        width: 85%;
+    }
+}
